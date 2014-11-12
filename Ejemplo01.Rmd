@@ -1,0 +1,15 @@
+---
+title: "Primer reporte en R Markdown"
+author: "Diego Ruiz Velasco Fernández - 131872"
+output: html_document
+---
+
+### Introduccion al formato R Markdown
+
+```{r GenerarHistograma}
+  set.seed(20140811)
+  x <- rnorm(10000,mean=80,sd=10)
+  hist(x,breaks=100,border="white",col=gray(.7))
+  abline(v=mean(x),col="blue",lwd=2)
+
+````
